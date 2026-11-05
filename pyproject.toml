@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "g8-compat-patcher"
+version = "0.1.0"
+description = "Local, hash-checked compatibility patcher for a pinned G8 Galileo firmware"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+authors = [{ name = "CodeKi0303" }]
+dependencies = []
+
+[project.scripts]
+g8-compat-patcher = "g8_patcher.cli:main"
+
+[tool.setuptools]
+packages = ["g8_patcher"]
+include-package-data = false
+
+[tool.setuptools.package-data]
+g8_patcher = ["profiles.json"]

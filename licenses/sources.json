@@ -1,0 +1,12 @@
+[
+  {
+    "file": "Tcl-8.6.15-license.terms",
+    "url": "https://raw.githubusercontent.com/tcltk/tcl/core-8-6-15/license.terms",
+    "sha256": "c0a69a2bfd757361ec7e6143973b103c90409316b49e9c88db26ad6388e79f16"
+  },
+  {
+    "file": "Apache-2.0.txt",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  }
+]

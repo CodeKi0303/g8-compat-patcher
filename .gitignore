@@ -1,0 +1,43 @@
+# Local firmware and user-generated output must never be distributed with source.
+*.bin
+*.zip
+*.apk
+*.aab
+*.exe
+*.dll
+*.so
+*.dylib
+*.log
+/originals/
+/output/
+/outputs/
+/artifacts/
+/dist/
+/build/
+/verification/
+
+# Python and build environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.whl
+*.spec
+.venv/
+.tools/
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor and operating-system state
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local signing material
+*.pfx
+*.p12
+*.jks
+*.keystore
+*.key

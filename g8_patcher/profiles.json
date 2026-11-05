@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "url": "https://ota.xiaoji.com/download/gamesir-g8_firmware_129.60-1.5-20240301.zip",
+    "zipBytes": 71590,
+    "zipSha256": "91cd60ab188a7967fa1c98d6014c5ce6b662da8e155019e7904e1611cfeef210",
+    "mainMember": "G6C_ISP.bin",
+    "mainBytes": 68720,
+    "mainSha256": "b14fe82aa20ecd3a5150ca1f5c19b73faf760f3fd241378905730f9fcb9abac4",
+    "members": [
+      {
+        "name": "G6C_ISP(PD).bin",
+        "bytes": 35860
+      },
+      {
+        "name": "G6C_ISP.bin",
+        "bytes": 68720
+      },
+      {
+        "name": "X3R.bin",
+        "bytes": 10792
+      }
+    ]
+  },
+  "profiles": [
+    {
+      "id": "kishi-xbox",
+      "label": "Kishi + Xbox",
+      "description": "Android 모드: Kishi / PS 모드: Xbox Wireless Controller",
+      "outputSha256": "b6b5cc95c7f2d03c877075cc06e6afc396ae3e35c86bbe502710288c3d9c817b",
+      "packageSelectionVersion": "129.64-1.5",
+      "changes": [
+        {
+          "offset": 29546,
+          "replacementHex": "0a49"
+        },
+        {
+          "offset": 29549,
+          "replacementHex": "2c08bf123112220648f9f791f8002c02d10349034a9160"
+        },
+        {
+          "offset": 29580,
+          "replacementHex": "32151a07"
+        },
+        {
+          "offset": 30530,
+          "replacementHex": "08"
+        },
+        {
+          "offset": 30534,
+          "replacementHex": "0aa0052c02d01c"
+        },
+        {
+          "offset": 30542,
+          "replacementHex": "04b91da005"
+        },
+        {
+          "offset": 30549,
+          "replacementHex": "f03bfb0449088002484860"
+        },
+        {
+          "offset": 30561,
+          "replacementHex": "4610bd100d0020904e00208c080020006f6e7958626f7820576972656c65737320436f6e74726f6c6c657200740000576972"
+        },
+        {
+          "offset": 30612,
+          "replacementHex": "6c65737320436f6e74726f6c6c6572"
+        },
+        {
+          "offset": 30634,
+          "replacementHex": "3a"
+        },
+        {
+          "offset": 30638,
+          "replacementHex": "aff23c00052c02d00ba004b905a0c9e700bf47414d4553"
+        },
+        {
+          "offset": 30662,
+          "replacementHex": "520052617a657200000052617a6572204b69736869"
+        },
+        {
+          "offset": 30684,
+          "replacementHex": "556c74726100000047616d655369722d4738"
+        },
+        {
+          "offset": 30703,
+          "replacementHex": "00"
+        }
+      ]
+    },
+    {
+      "id": "kishi-ps",
+      "label": "Kishi + PS",
+      "description": "Android 모드: Kishi / PS 모드: Wireless Controller",
+      "outputSha256": "1c97976722232f52a41e64be88d11d60795c4954b8ab9d52402900d62d63dab1",
+      "packageSelectionVersion": "129.63-1.5",
+      "changes": [
+        {
+          "offset": 29546,
+          "replacementHex": "0a49"
+        },
+        {
+          "offset": 29549,
+          "replacementHex": "2c08bf123112220648f9f791f8002c02d10349034a9160"
+        },
+        {
+          "offset": 29580,
+          "replacementHex": "32151a07"
+        },
+        {
+          "offset": 30530,
+          "replacementHex": "08"
+        },
+        {
+          "offset": 30534,
+          "replacementHex": "0aa0052c02d01c"
+        },
+        {
+          "offset": 30542,
+          "replacementHex": "04b91da005"
+        },
+        {
+          "offset": 30549,
+          "replacementHex": "f03bfb0449088002484860"
+        },
+        {
+          "offset": 30561,
+          "replacementHex": "4610bd100d0020904e00208c080020006f6e7920496e74657261637469766520456e7465727461696e6d656e740000576972"
+        },
+        {
+          "offset": 30612,
+          "replacementHex": "6c65737320436f6e74726f6c6c6572"
+        },
+        {
+          "offset": 30634,
+          "replacementHex": "3a"
+        },
+        {
+          "offset": 30638,
+          "replacementHex": "aff22000052c02d00ba004b905a0c9e700bf47414d4553"
+        },
+        {
+          "offset": 30662,
+          "replacementHex": "520052617a657200000052617a6572204b69736869"
+        },
+        {
+          "offset": 30684,
+          "replacementHex": "556c74726100000047616d655369722d4738"
+        },
+        {
+          "offset": 30703,
+          "replacementHex": "00"
+        }
+      ]
+    }
+  ]
+}
