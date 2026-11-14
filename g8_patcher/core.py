@@ -182,7 +182,7 @@ def build_package(source_zip: Path, output_dir: Path, profile_id: str = "kishi-x
                          "zipCrcAndPayloadPassed": True,
                          "changedBytes": sum(a != b for a, b in zip(original, main))},
         "scope": "Local Main image generation only. Left and PD are not included. "
-                 "No controller readback or flashing is performed. Xbox profile retains PS USB HID format.",
+                 "No controller readback or flashing is performed. Xbox profile retains PS USB HID format but omits the digital L2/R2 button bits.",
     }
     report_data = (json.dumps(record, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
     try:

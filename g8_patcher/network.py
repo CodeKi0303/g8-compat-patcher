@@ -42,7 +42,7 @@ def download_original(destination_dir: Path) -> Path:
         return destination
 
     request = urllib.request.Request(url, headers={
-        "User-Agent": "G8-Compat-Patcher/0.1.0",
+        "User-Agent": "G8-Compat-Patcher/0.1.1",
         "Accept": "application/zip",
     })
     opener = urllib.request.build_opener(_OfficialRedirects())

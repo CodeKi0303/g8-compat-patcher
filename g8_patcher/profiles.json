@@ -26,9 +26,9 @@
     {
       "id": "kishi-xbox",
       "label": "Kishi + Xbox",
-      "description": "Android 모드: Kishi / PS 모드: Xbox Wireless Controller",
-      "outputSha256": "b6b5cc95c7f2d03c877075cc06e6afc396ae3e35c86bbe502710288c3d9c817b",
-      "packageSelectionVersion": "129.64-1.5",
+      "description": "Android 모드: Kishi / PS 모드: Xbox Wireless Controller (L2·R2는 아날로그 축만 전송)",
+      "outputSha256": "24b06b76a62ba8373d104279e4521c90d3cf62108864d7d391fd76d538670d82",
+      "packageSelectionVersion": "129.65-1.5",
       "changes": [
         {
           "offset": 29546,
@@ -85,6 +85,22 @@
         {
           "offset": 30703,
           "replacementHex": "00"
+        },
+        {
+          "offset": 60244,
+          "replacementHex": "af"
+        },
+        {
+          "offset": 60246,
+          "replacementHex": "0080"
+        },
+        {
+          "offset": 60298,
+          "replacementHex": "af"
+        },
+        {
+          "offset": 60300,
+          "replacementHex": "0080"
         }
       ]
     },

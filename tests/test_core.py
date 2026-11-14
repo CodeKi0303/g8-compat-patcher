@@ -115,7 +115,8 @@ class OriginalIntegrationTests(unittest.TestCase):
                     self.assertEqual(result["main_bytes"], len(main))
                     report = json.loads(Path(result["report"]).read_text("utf-8"))
                     self.assertEqual(report["output"]["mainSha256"], profile["outputSha256"])
-                    self.assertEqual(report["verification"]["changedBytes"], 182)
+                    self.assertEqual(report["verification"]["changedBytes"],
+                                     {"kishi-xbox": 188, "kishi-ps": 182}[profile["id"]])
                     self.assertNotIn(str(self.original), json.dumps(report))
             self.assertEqual(self.original.read_bytes(), self.original_bytes)
 
@@ -163,7 +164,12 @@ class OriginalIntegrationTests(unittest.TestCase):
                     result = core.build_package(self.original, Path(temp), identifier)
                     with zipfile.ZipFile(result["archive"]) as archive:
                         main = archive.read("G6C_ISP.bin")
-                    self.assertEqual(main, reference.read_bytes())
+                    expected = bytearray(reference.read_bytes())
+                    if identifier == "kishi-xbox":
+                        # Later than the retained v5 binary: digital L2/R2 bits are not sent.
+                        for offset in (0xEB54, 0xEB8A):
+                            expected[offset:offset + 4] = bytes.fromhex("aff30080")
+                    self.assertEqual(main, bytes(expected))
 
 
 if __name__ == "__main__":

@@ -13,6 +13,8 @@ USB-C형 **G8 Galileo**, 공식 원본 **129.60-1.5**를 지원합니다. G8+와
 
 프로필은 장치 이름과 식별 정보를 변경합니다. PS 모드의 입력 형식은 유지되며, Windows XInput으로 변환하지 않습니다.
 
+Kishi + Xbox 프로필의 PS 모드는 실제 Xbox 패드처럼 L2·R2를 아날로그 축으로만 보내고 버튼 신호는 보내지 않습니다. 이름을 보고 Xbox 배치를 적용하는 게임에서 트리거를 누를 때 조작 방식이 터치와 패드 사이를 오가는 문제를 막기 위한 것입니다. L2·R2를 버튼으로만 읽는 앱에는 Kishi + PS 프로필을 사용하세요.
+
 ## 사용법
 
 1. [Releases](https://github.com/CodeKi0303/g8-compat-patcher/releases/latest)에서 Windows ZIP을 내려받아 압축을 풉니다.

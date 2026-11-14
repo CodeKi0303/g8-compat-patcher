@@ -34,7 +34,7 @@ class CommandLineTests(unittest.TestCase):
         self.assertEqual(result.stderr, "")
         result = run_cli("--version")
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertIn("0.1.0", result.stdout)
+        self.assertIn("0.1.1", result.stdout)
 
     def test_source_choice_is_required_and_exclusive(self):
         for arguments in [
@@ -73,7 +73,7 @@ class CommandLineTests(unittest.TestCase):
             )
             self.assertEqual(result.returncode, 0, result.stderr)
             payload = json.loads(result.stdout)
-            self.assertEqual(payload["main_sha256"], "b6b5cc95c7f2d03c877075cc06e6afc396ae3e35c86bbe502710288c3d9c817b")
+            self.assertEqual(payload["main_sha256"], "24b06b76a62ba8373d104279e4521c90d3cf62108864d7d391fd76d538670d82")
             self.assertTrue(Path(payload["archive"]).is_file())
             self.assertTrue(Path(payload["report"]).is_file())
             self.assertEqual(result.stderr, "")
