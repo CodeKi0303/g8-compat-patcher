@@ -7,7 +7,7 @@ $taskRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 if (-not (Test-Path -LiteralPath $BuildPython -PathType Leaf)) {
     throw 'Supply an existing Python environment with requirements-build.txt installed.'
 }
-if (-not $OutputDirectory) { $OutputDirectory = Join-Path $taskRoot 'dist\g8-compat-patcher-0.1.0-windows-x64' }
+if (-not $OutputDirectory) { $OutputDirectory = Join-Path $taskRoot 'dist\g8-compat-patcher-0.1.1-windows-x64' }
 $taskOutput = [IO.Path]::GetFullPath($OutputDirectory)
 if (Test-Path -LiteralPath $taskOutput) { throw 'Choose a new output directory; previous releases are preserved.' }
 Push-Location $taskRoot
